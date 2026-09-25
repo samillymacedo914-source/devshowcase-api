@@ -1,0 +1,80 @@
+{
+  "info": {
+    "name": "DevShowcase API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST Profile",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Kailany Samilly Macedo Freitas\",\"bio\":\"Estudante e desenvolvedora em formação.\",\"githubUrl\":\"https://github.com/exemplo\",\"linkedinUrl\":\"https://www.linkedin.com/in/exemplo\"}"
+        },
+        "url": "http://localhost:8080/api/profiles"
+      }
+    },
+    {
+      "name": "GET Profile",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/profiles/1"
+      }
+    },
+    {
+      "name": "POST Technology",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Java\"}"
+        },
+        "url": "http://localhost:8080/api/technologies"
+      }
+    },
+    {
+      "name": "GET Technologies",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/technologies"
+      }
+    },
+    {
+      "name": "POST Project",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\":\"DevShowcase\",\"description\":\"API para apresentação de desenvolvedores e projetos.\",\"repositoryUrl\":\"https://github.com/exemplo/devshowcase-api\",\"deployUrl\":\"https://example.com\",\"profileId\":1,\"technologyIds\":[1]}"
+        },
+        "url": "http://localhost:8080/api/projects"
+      }
+    },
+    {
+      "name": "GET Projects",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/projects"
+      }
+    }
+  ]
+}
