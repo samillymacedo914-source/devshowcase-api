@@ -2,7 +2,6 @@ package com.devshowcase.api.dto;
 
 import jakarta.validation.constraints.*;
 import org.hibernate.validator.constraints.URL;
-
 import java.util.*;
 
 public final class DTOs {
@@ -54,9 +53,6 @@ public final class DTOs {
             String description,
             String repositoryUrl,
             String deployUrl,
-            Long profileId,
-            String profileName,
-            List<TechnologyResponse> technologies,
             Double averageRating,
             Integer upvotes
     ) {}
@@ -71,7 +67,6 @@ public final class DTOs {
             Long id,
             String author,
             Integer rating,
-            String comment,
-            Long projectId
+            String comment
     ) {}
 }
